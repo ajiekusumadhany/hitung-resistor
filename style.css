@@ -1,0 +1,202 @@
+/*css reset*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  width: 100%;
+  height: auto;
+  background-color: #069587;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0px;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+#warna1,
+#warna2,
+#warna3,
+#warna4,
+button,
+#hasil {
+  width: 90%;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.pilihwarna {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+button,
+#hasil {
+  margin-top: 20px;
+}
+
+select[name="warna1"],
+select[name="warna2"],
+select[name="warna3"],
+select[name="warna4"] {
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+button {
+  background-color: #069587;
+  color: #ffffff;
+  border-radius: 10px;
+  border-color: #069587;
+  padding: 10px;
+}
+button:hover {
+  background-color: #12867a;
+}
+@media only screen and (min-width: 1000px) {
+  .pilihwarna {
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+  h1 {
+    width: 100%;
+    height: auto;
+    background-color: #069587;
+    text-align: center;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+  }
+  button:hover {
+    background-color: #12867a;
+  }
+}
