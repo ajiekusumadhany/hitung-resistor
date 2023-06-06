@@ -126,7 +126,7 @@ table {
 h1 {
   width: 100%;
   height: auto;
-  background-color: #069587;
+  background-color: #4f9bec;
   text-align: center;
   color: white;
   padding-top: 5px;
@@ -170,10 +170,10 @@ select[name="warna4"] {
   background-color: #ffffff;
 }
 button {
-  background-color: #069587;
+  background-color: #4f9bec;
   color: #ffffff;
   border-radius: 10px;
-  border-color: #069587;
+  border-color: #4f9bec;
   padding: 10px;
 }
 button:hover {
@@ -189,7 +189,7 @@ button:hover {
   h1 {
     width: 100%;
     height: auto;
-    background-color: #069587;
+    background-color: #4f9bec;
     text-align: center;
     color: white;
     padding-top: 5px;
