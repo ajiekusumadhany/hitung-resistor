@@ -177,7 +177,7 @@ button {
   padding: 10px;
 }
 button:hover {
-  background-color: #12867a;
+  background-color: #3094fe;
 }
 @media only screen and (min-width: 1000px) {
   .pilihwarna {
@@ -197,6 +197,6 @@ button:hover {
     margin-top: 0px;
   }
   button:hover {
-    background-color: #12867a;
+    background-color: #3094fe;
   }
 }
