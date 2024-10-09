@@ -1,122 +1,70 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Nilai Resistor Berdasarkan Warna</title>
+    <title>Resistor Calculator</title>
     <link rel="stylesheet" href="style.css">
-    <meta property="og:description" content="Alat untuk menghitung nilai resistor berdasarkan kode warna" />
-    <link rel="icon"
-        href="https://ajiekusumadhany.com/blog/wp-content/uploads/2023/05/cropped-logo-favicon-ajie-32x32.png"
-        sizes="32x32" />
-    <link rel="icon"
-        href="https://ajiekusumadhany.com/blog/wp-content/uploads/2023/05/cropped-logo-favicon-ajie-192x192.png"
-        sizes="192x192" />
-    <link rel="apple-touch-icon"
-        href="https://ajiekusumadhany.com/blog/wp-content/uploads/2023/05/cropped-logo-favicon-ajie-180x180.png" />
-    <meta name="msapplication-TileImage"
-        content="https://ajiekusumadhany.com/blog/wp-content/uploads/2023/05/cropped-logo-favicon-ajie-270x270.png" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics v4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CH37WDGNS7"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-CH37WDGNS7');
-    </script>
-    <!-- End Google Analytics v4 -->
-
 </head>
 
 <body>
-    <h1>Hitung Nilai Resistor</h1>
-    <div class="pilihwarna">
-        <h2 class="warna1">Warna 1:</h2>
-        <select name="warna1" id="warna1">
-            <option value="">Pilih Warna</option>
-            <option value="0">Hitam</option>
-            <option value="1">Coklat</option>
-            <option value="2">Merah</option>
-            <option value="3">Orange</option>
-            <option value="4">Kuning</option>
-            <option value="5">Hijau</option>
-            <option value="6">Biru</option>
-            <option value="7">Ungu</option>
-            <option value="8">Abu Abu</option>
-            <option value="9">Putih</option>
-        </select>
-        <h2 class="warna2">Warna 2:</h2>
-        <select name="warna2" id="warna2">
-            <option value="">Pilih Warna</option>
-            <option value=0>Hitam</option>
-            <option value=1>Coklat</option>
-            <option value=2>Merah</option>
-            <option value=3>Orange</option>
-            <option value=4>Kuning</option>
-            <option value=5>Hijau</option>
-            <option value=6>Biru</option>
-            <option value=7>Ungu</option>
-            <option value=8>Abu Abu</option>
-            <option value=9>Putih</option>
-        </select>
-        <h2 class="warna3">Warna 3:</h2>
-        <select name="warna3" id="warna3">
-            <option value="">Pilih Warna</option>
-            <option value=1>Hitam</option>
-            <option value=10>Coklat</option>
-            <option value=100>Merah</option>
-            <option value=1000>Orange</option>
-            <option value=10000>Kuning</option>
-            <option value=100000>Hijau</option>
-            <option value=1000000>Biru</option>
-            <option value=10000000>Ungu</option>
-            <option value=100000000>Abu Abu</option>
-            <option value=1000000000>Putih</option>
-        </select>
-        <h2 class="warna1">Warna 4:</h2>
-        <select name="warna4" id="warna4">
-            <option value="">Pilih Warna</option>
-            <option value="5%">Emas</option>
-            <option value="10%">Silver</option>
-        </select>
+    <div class="main-container">
+        <header>
+            <h1>Resistor Calculator</h1>
+        </header>
+        <div class="color-selection">
+            <select name="color1" id="color1">
+                <option value="">Color 1</option>
+                <option value="0">Black</option>
+                <option value="1">Brown</option>
+                <option value="2">Red</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="5">Green</option>
+                <option value="6">Blue</option>
+                <option value="7">Purple</option>
+                <option value="8">Gray</option>
+                <option value="9">White</option>
+            </select>
+            <select name="color2" id="color2">
+                <option value="">Color 2</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Purple</option>
+                <option value=8>Gray</option>
+                <option value=9>White</option>
+            </select>
+            <select name="color3" id="color3">
+                <option value="">Color 3</option>
+                <option value=1>Black</option>
+                <option value=10>Brown</option>
+                <option value=100>Red</option>
+                <option value=1000>Orange</option>
+                <option value=10000>Yellow</option>
+                <option value=100000>Green</option>
+                <option value=1000000>Blue</option>
+                <option value=10000000>Purple</option>
+                <option value=100000000>Gray</option>
+                <option value=1000000000>White</option>
+            </select>
+            <select name="color4" id="color4">
+                <option value="">Color 4</option>
+                <option value="5%">Gold</option>
+                <option value="10%">Silver</option>
+            </select>
 
-        <button>Hitung</button>
-        <p id="hasil"></p>
+        </div>
+        <button>Calculate</button>
+        <p id="result"></p>
     </div>
-
-
-    <script>
-        var tombolHitung = document.querySelector('button');
-
-        tombolHitung.addEventListener('click', function () {
-            hitungNilaiResistor();
-        });
-
-        var hasilPerkalianElemen = document.createElement('div');
-        document.body.appendChild(hasilPerkalianElemen);
-
-        function hitungNilaiResistor() {
-            var nilaiWarna1 = document.getElementById('warna1').value;
-            var nilaiWarna2 = document.getElementById('warna2').value;
-            var nilaiWarna3 = document.getElementById('warna3').value;
-            var nilaiWarna4 = document.getElementById('warna4').value;
-
-            if (nilaiWarna1 !== '' && nilaiWarna2 !== '' && nilaiWarna3 !== '' && nilaiWarna4 !== '') {
-                var hasil = nilaiWarna1 + nilaiWarna2 * nilaiWarna3;
-                document.getElementById('hasil').textContent = 'Nilai Resistor: ' + hasil + ' ohm' + ' +- ' + nilaiWarna4;
-            }
-        }
-
-
-    </script>
-
-</body>
-
-</html>
+    <script src="script.js"></script>
 </body>
 
 </html>
